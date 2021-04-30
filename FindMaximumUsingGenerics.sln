@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaximumUsingGenerics", "FindMaximumUsingGenerics\FindMaximumUsingGenerics.csproj", "{96163CFF-B1F3-4DC9-A1D9-14583917C89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTestForMaxNum", "MsTestForMaxNum\MsTestForMaxNum.csproj", "{82152F75-197D-40AD-AD42-19BA8010959F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96163CFF-B1F3-4DC9-A1D9-14583917C89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96163CFF-B1F3-4DC9-A1D9-14583917C89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96163CFF-B1F3-4DC9-A1D9-14583917C89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96163CFF-B1F3-4DC9-A1D9-14583917C89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82152F75-197D-40AD-AD42-19BA8010959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82152F75-197D-40AD-AD42-19BA8010959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82152F75-197D-40AD-AD42-19BA8010959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82152F75-197D-40AD-AD42-19BA8010959F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8864E61-64AE-42BE-BAD0-BFB48DCFB32A}
+	EndGlobalSection
+EndGlobal
