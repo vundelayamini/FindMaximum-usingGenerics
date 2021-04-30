@@ -4,60 +4,29 @@ using System.Text;
 
 namespace FindMaximumUsingGenerics
 {
-    public class FindMaximumNum
+    public class FindMaximum<T> where T : IComparable
     {
-        //UC1-Given 3 integers find maximum number
-        public int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)//constructor
-        {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)//using compare method 
-            {
-                return firstValue;
-            }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-            {
-                return secondValue;
-            }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
-            {
-                return thirdValue;
-            }
-            throw new Exception("Either two or three inputs are same");
-        }
-        //UC2-Given 3 floats find the maximum  number
-        public float MaximumFloatNumber(float firstValue, float secondValue, float thirdValue)
-        {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-            {
-                return firstValue;
-            }
-            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-            {
-                return secondValue;
-            }
-            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
-            {
-                return thirdValue;
-            }
-            throw new Exception("Either two or three inputs are same");
-        }
-        //UC3-find maximum string 
-        public string MaximumString(string firstString, string secondString, string thirdString)
-        {
-            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0)
-            {
-                return firstString;
-            }
-            if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0)
-            {
-                return secondString;
-            }
-            if (thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) > 0)
-            {
-                return thirdString;
-            }
-            throw new Exception("Either two or three inputs are same");
-        }
+        public T[] array;
 
+        public FindMaximum( T[] array)
+        {
+            this.array = array;
+        }
+        public T[] Sort()
+        {
+            Array.Sort(array);
+            return array;
+        }
+        public T FindMaxValue()
+        {
+            T[] sorted = this.Sort();
+            return sorted[sorted.Length - 1];
+        }
     }
-
+        
+       
+    
 }
+
+    
+

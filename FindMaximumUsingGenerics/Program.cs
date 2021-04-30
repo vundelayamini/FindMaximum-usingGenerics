@@ -6,12 +6,15 @@ namespace FindMaximumUsingGenerics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Find Maximum Number :");
-            FindMaximumNum find = new FindMaximumNum();//Create object fot findmaximum 
-            Console.WriteLine(find.MaximumIntegerNumber(10, 20, 30));//find the max  ineger number
-            Console.WriteLine(find.MaximumFloatNumber(10.5f, 20.5f, 30.5f));//find the maximum float number
-            Console.WriteLine(find.MaximumString("Apple", "Banana", "Peach"));//find the string 
-
+            int[] intArray = { 112, 344, 432, 555, 678 };
+            FindMaximum<int> find1 = new FindMaximum<int>(intArray);
+            float[] floatArray = { 11.2f, 34.4f, 4.32f, 55.5f, 6.78f };
+            FindMaximum<float> find2 = new FindMaximum<float>(floatArray);
+            string[] stringArray = { "111", "222", "333", "55", "999" };
+            FindMaximum<string> find3 = new FindMaximum<string>(stringArray);
+            Console.WriteLine(find1.FindMaxValue());
+            Console.WriteLine(find2.FindMaxValue());
+            Console.WriteLine(find3.FindMaxValue());
         }
     }
     
