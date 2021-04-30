@@ -7,10 +7,10 @@ namespace FindMaximumUsingGenerics
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Number :");
-            FindMaximumNum find = new FindMaximumNum();//Create object fot findmaximumnum
+            FindMaximumNum find = new FindMaximumNum();//Create object fot findmaximum 
             Console.WriteLine(find.MaximumIntegerNumber(10, 20, 30));//find the max  ineger number
-            Console.WriteLine(find.MaximumFloatNumber(10.5f, 20.5f, 30.5f));//find the float number
-
+            Console.WriteLine(find.MaximumFloatNumber(10.5f, 20.5f, 30.5f));//find the maximum float number
+            Console.WriteLine(find.MaximumString("Apple", "Banana", "Peach"));//find the string 
 
         }
     }
